@@ -8,18 +8,22 @@ using namespace std;
 
 int main()
 {
+    string nimi1 = "Asiakas1";
+    string nimi2 = "Asiakas2";
+    Asiakas asiakas1(nimi1, 2000);
+    Asiakas asiakas2(nimi2, 1500)
     Luottotili luottotili("Asiakas", 1000);
     cout << "Pankkitili luotu " << luottotili <<
         "luottoraja: " << luottotili.luottoRaja << endl;
     Pankkitili kayttotili("Asiakas");
     Asiakas asiakas("Asiakas 1", 2500);
-    asiakas.showSaldo();
-    asiakas.talletus(100);
-    asiakas.showSaldo();
-    asiakas.nosto(1000000);
-    asiakas.showSaldo();
+    asiakas1.showSaldo();
+    asiakas1.talletus(100);
+    asiakas1.showSaldo();
+    asiakas1.nosto(1000000);
+    asiakas1.showSaldo();
     //asiakas.luotonMaksu(100);
-    asiakas.showSaldo();
+    asiakas1.showSaldo();
     cout << "Pankkitilin saldo: " << kayttotili.getBalance() << endl;
 
     kayttotili.deposit(6);
