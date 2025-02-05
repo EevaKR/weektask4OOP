@@ -9,6 +9,8 @@ using namespace std;
 int main()
 {
     Luottotili luottotili("Asiakas", 1000);
+    cout << "Pankkitili luotu " << luottotili <<
+        "luottoraja: " << luottotili.luottoRaja << endl;
     Pankkitili kayttotili("Asiakas");
     Asiakas asiakas("Asiakas 1", 2500);
     asiakas.showSaldo();

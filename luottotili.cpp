@@ -11,7 +11,7 @@ Luottotili::Luottotili() {
     cout << "Kutsutaan luottotili-konstruktoria" << endl;
 }
 
-Luottotili::Luottotili(string nimi, double luottoRaja) : Pankkitili(nimi), luottoRaja(luottoRaja) {
+Luottotili::Luottotili(string& nimi, double luottoRaja) : Pankkitili(nimi), luottoRaja(luottoRaja) {
 
 }
 

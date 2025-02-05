@@ -9,14 +9,15 @@ using namespace std;
 class Luottotili : public Pankkitili
 {
 
-protected:
-    double luottoRaja;
+
+
 
 public:
     Luottotili();
-    Luottotili(string nimi, double luottoRaja);
+    Luottotili(string& nimi, double luottoRaja);
     bool withdraw(double summa);
     bool deposit(double summa);
+    double luottoRaja;
 
 };
 
